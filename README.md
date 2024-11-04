@@ -1,4 +1,4 @@
-# Hi, I'm Damilola Joshua Oladoke! 👋
+# Hi, I'm Damilola Oladoke! 👋
 
 I'm a **Computer Science student** with a passion for **backend web development** and a bit of **frontend magic**. I enjoy building robust, scalable web applications and exploring new technologies.
 
