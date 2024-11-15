@@ -1,6 +1,6 @@
 # Hi, I'm Damilola Oladoke! 👋
 
-I'm a **Computer Science student** with a passion for **backend web development** and a bit of **frontend magic**. I enjoy building robust, scalable web applications and exploring new technologies.
+I'm a **Computer Scientist** with a passion for **backend web development** and a bit of **frontend magic**. I enjoy building robust, scalable web applications and exploring new technologies.
 
 ## 🔧 Tech & Tools:
 - **Backend**: Python (Flask, Django)
