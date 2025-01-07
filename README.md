@@ -12,6 +12,7 @@ I'm a **Computer Scientist** with a passion for **backend web development** and 
 - Advanced RESTful API development
 - Enhancing frontend skills with React
 - Web security and performance optimization
+- API Penetration Testing
 
 ## 📫 Contact Me:
 - **Email**: [oladokedamilola7@gmail.com](mailto:oladokedamilola7@gmail.com)
