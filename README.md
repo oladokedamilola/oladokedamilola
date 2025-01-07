@@ -28,7 +28,7 @@ I’m always looking to collaborate on **backend-focused projects** that challen
 
 - **Email**: [oladokedamilola7@gmail.com](mailto:oladokedamilola7@gmail.com)
 - **LinkedIn**: [Connect with me](https://www.linkedin.com/in/oladokedamilola)
-- **GitHub**: [Check out my repos]((https://github.com/oladokedamilola?tab=repositories))
+- **GitHub**: [Check out my repos]((https://github.com/oladokedamilola?tab=repositories)
 
 I’m excited to take on **backend development roles** that push the limits of what we can achieve with technology. Let’s build something amazing together! 🚀
 
