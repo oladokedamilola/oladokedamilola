@@ -16,20 +16,19 @@ With hands-on experience working on **RESTful APIs**, database management, and d
 ## 🌱 Currently Exploring:
 - Building **cutting-edge APIs** that integrate seamlessly with external systems
 - **Database optimization** and advanced query tuning for performance at scale
-- Deep dive into **fintech** and **open banking** solutions (ready to learn!)
 - Strengthening knowledge of **web security** and **API penetration testing**
 
 ## 💡 Recent Projects:
 - **Labelbox Web App**: Optimized backend workflows with Flask and MySQL, improving task management efficiency by 40%.
 - **Blog Website**: Built a secure Django-based blog platform with user authentication, analytics, and social features.
-- **Lettuce Disease Classification**: Created an AI-based image classification tool to detect plant diseases with 91% accuracy using Flask and TensorFlow.
+- **Lettuce Disease Classification**: Built a web-based AI tool for diagnosing lettuce diseases using MobileNetV2, achieving 98% accuracy in detecting healthy vs. diseased plants and 96% accuracy for specific diseases. Integrated Flask for a real-time interface and actionable recommendations.
 
 ## 💬 Let's Connect!
 I’m always looking to collaborate on **backend-focused projects** that challenge the status quo and explore innovative solutions. If you're building something ambitious or need a backend expert to bring your ideas to life, let's talk!
 
 - **Email**: [oladokedamilola7@gmail.com](mailto:oladokedamilola7@gmail.com)
 - **LinkedIn**: [Connect with me](https://www.linkedin.com/in/oladokedamilola)
-- **GitHub**: [Check out my repos](https://www.github.com/oladokedamilola)
+- **GitHub**: [Check out my repos]((https://github.com/oladokedamilola?tab=repositories))
 
 I’m excited to take on **backend development roles** that push the limits of what we can achieve with technology. Let’s build something amazing together! 🚀
 
