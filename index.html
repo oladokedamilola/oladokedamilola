@@ -6,7 +6,18 @@
     <title>Damilola Oladoke - Python Backend & AI Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Favicon for most browsers -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-- Favicon for older IE browsers -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 </head>
 <body>
     <!-- Animated Grid Background -->
@@ -56,29 +67,29 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="text-rotator">
-                <div class="text-set active">
-                    <h1 class="glitch-text" data-text="AI-Powered Web Applications">AI-Powered Web Applications</h1>
-                    <p class="subtitle">Backend systems. Machine learning. Intelligent automation.</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="Python Backend & AI">Python Backend & AI</h1>
-                    <p class="subtitle">Building intelligent systems for startups</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="Intelligent Automation">Intelligent Automation</h1>
-                    <p class="subtitle">Scalable APIs and AI integration</p>
-                </div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="text-rotator">
+            <div class="text-set">
+                <h1 class="hero-text">I build AI-powered web applications for startups.</h1>
+                <p class="hero-subtitle">Backend systems. Machine learning. Intelligent automation.</p>
+            </div>
+            <div class="text-set">
+                <h1 class="hero-text">Python Backend & AI Developer</h1>
+                <p class="hero-subtitle">Building intelligent systems for startups</p>
+            </div>
+            <div class="text-set">
+                <h1 class="hero-text">Intelligent Automation</h1>
+                <p class="hero-subtitle">Scalable APIs and AI integration</p>
             </div>
         </div>
-        <div class="cta-container">
-            <a href="#contact" class="cta-button cta-primary">Let's build something intelligent →</a>
-            <a href="#projects" class="cta-button cta-secondary">View Projects</a>
-        </div>
-    </section>
+    </div>
+    <div class="cta-container">
+        <a href="#contact" class="cta-button cta-primary">Let's build something intelligent →</a>
+        <a href="#projects" class="cta-button cta-secondary">View Projects</a>
+    </div>
+</section>
 
     <!-- Quick Highlights -->
     <section class="highlights">
@@ -103,73 +114,108 @@
         </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section class="tech-stack">
-        <div class="container">
-            <h2 class="section-title">Tech Stack</h2>
-            <div class="tech-grid">
-                <div class="tech-item">Python</div>
-                <div class="tech-item">Django</div>
-                <div class="tech-item">Flask</div>
-                <div class="tech-item">FastAPI</div>
-                <div class="tech-item">Azure OpenAI</div>
-                <div class="tech-item">TensorFlow</div>
-                <div class="tech-item">Hugging Face</div>
-                <div class="tech-item">PostgreSQL</div>
-                <div class="tech-item">MySQL</div>
+<!-- Tech Stack -->
+<section class="tech-stack">
+    <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <i class="fab fa-python tech-icon"></i>
+                <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-bolt tech-icon"></i>
+                <span class="tech-name">Django</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-flask tech-icon"></i>
+                <span class="tech-name">Flask</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-rocket tech-icon"></i>
+                <span class="tech-name">FastAPI</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-robot tech-icon"></i>
+                <span class="tech-name">Azure OpenAI</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-brain tech-icon"></i>
+                <span class="tech-name">TensorFlow</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-smile tech-icon"></i>
+                <span class="tech-name">Hugging Face</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-table tech-icon"></i>
+                <span class="tech-name">PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database tech-icon"></i>
+                <span class="tech-name">MySQL</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="profile-header">
-                        <div class="profile-image">
-                            <img src="assets/img/profile.jpg" alt="Damilola Oladoke" onerror="this.style.display='none'">
-                        </div>
-                        <div class="profile-info">
-                            <h2>Hi, I'm Damilola Oladoke</h2>
-                            <p class="tagline">Python Backend & AI Developer</p>
-                        </div>
-                    </div>
+  <!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <!-- Centered Profile Header -->
+        <div class="profile-hero">
+            <div class="profile-image-large">
+                <img src="assets/img/profile.jpg" alt="Damilola Oladoke" onerror="this.style.display='none'">
+            </div>
+            <div class="profile-intro">
+                <h2 class="greeting">Hi, I'm Damilola Oladoke</h2>
+                <p class="tagline">Python Backend & AI Developer</p>
+                <p class="intro-text">I build AI-powered web applications for startups</p>
+            </div>
+        </div>
+
+        <!-- Two-column content below -->
+        <div class="about-content">
+            <div class="about-text">
+                <div class="bio-section">
                     <p>I'm passionate about helping startups integrate intelligence into their web systems. I build scalable applications, integrate AI/ML models, and design secure backend architectures.</p>
                     <p>Curious, collaborative, and startup-minded — I love turning ideas into clean, intelligent systems that solve real problems.</p>
-                    
-                    <div class="skills-section">
-                        <h3>Core Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">Backend Development (Django, Flask)</div>
-                            <div class="skill-item">AI/ML Integration (Hugging Face, Azure OpenAI)</div>
-                            <div class="skill-item">API Design & Security (REST, APIsec Fundamentals)</div>
-                            <div class="skill-item">Data Automation & Pipelines</div>
-                            <div class="skill-item">Frontend (Bootstrap 5, JS, HTML, CSS)</div>
-                        </div>
+                </div>
+                
+                <div class="skills-section">
+                    <h3>Core Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Backend Development (Django, Flask)</div>
+                        <div class="skill-item">AI/ML Integration (Hugging Face, Azure OpenAI)</div>
+                        <div class="skill-item">API Design & Security (REST, APIsec Fundamentals)</div>
+                        <div class="skill-item">Data Automation & Pipelines</div>
+                        <div class="skill-item">Frontend (Bootstrap 5, JS, HTML, CSS)</div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="timeline">
-                        <h3>Journey</h3>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2023</div>
-                            <div class="timeline-content">Internship at CodesPro Plc – Backend Developer</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2024</div>
-                            <div class="timeline-content">Developed AI Career Chatbot & EduPortfolio</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2025</div>
-                            <div class="timeline-content">Built CyberSentiment – Cybersecurity Threat Intelligence Platform</div>
-                        </div>
+            </div>
+            <div class="about-visual">
+                <div class="timeline">
+                    <h3>Journey</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">Internship at CodesPro Plc – Backend Developer</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">Developed AI Career Chatbot & EduPortfolio</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">Built CyberSentiment – Cybersecurity Threat Intelligence Platform</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
@@ -333,5 +379,29 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+
+
+
+    <!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="modal-title">Message Sent Successfully!</h3>
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Thank you for reaching out! I've received your message and will get back to you within 24 hours.</p>
+            <p class="modal-subtext">Looking forward to connecting with you!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn" id="modalOk">Got It!</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
