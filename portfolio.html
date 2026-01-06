@@ -20,6 +20,16 @@
 
     <!-- Favicon for older IE browsers -->
     <link rel="shortcut icon" href="assets/img/fav.png">
+
+    <style>
+        .portfolio-stat-number {
+    transition: transform 0.3s ease;
+}
+
+.portfolio-stat-number.animating {
+    transform: scale(1.1);
+}
+    </style>
 </head>
 <body class="bg-deep-blue text-white">
     <!-- Background Elements -->
@@ -1302,6 +1312,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-<script src="assets/js/main.js"></script>
+<script src="counter-animation.js"></script>
 </body>
 </html>
