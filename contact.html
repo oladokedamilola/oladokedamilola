@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Damilola Oladoke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+         <!-- Favicon for most browsers -->
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="assets/img/fav.png">
+
+    <!-- Favicon for older IE browsers -->
+    <link rel="shortcut icon" href="assets/img/fav.png">
+
+    <meta name="description" content="Damilola Oladoke - Python Backend & AI Developer. I build fast, scalable, AI-powered backend systems that help startups automate processes and make intelligent decisions.">
+
+    <style>
+/* Force the Contact link to be active */
+#navbar .nav-links li:last-child a {
+    opacity: 1 !important;
+    color: #FF5E00 !important;
+    text-shadow: 0 0 20px rgba(255, 94, 0, 1) !important;
+    font-weight: 600 !important;
+}
+
+#navbar .nav-links li:last-child a::after {
+    width: 100% !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #FF5E00, #00B2FF) !important;
+    box-shadow: 0 0 15px rgba(255, 94, 0, 0.8) !important;
+    animation: glow 2s infinite !important;
+}
+
+#navbar .nav-links li:last-child a::before {
+    border-color: #FF5E00 !important;
+    box-shadow: inset 0 0 15px rgba(255, 94, 0, 0.5) !important;
+    animation: pulse 2s infinite !important;
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(255, 94, 0, 0.8); }
+    50% { box-shadow: 0 0 25px rgba(255, 94, 0, 1); }
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: inset 0 0 15px rgba(255, 94, 0, 0.5); }
+    50% { box-shadow: inset 0 0 25px rgba(255, 94, 0, 0.8); }
+}
+</style>
+
+</head>
+
+
+<body class="bg-deep-blue text-white">
+    <!-- Background Elements -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+    <div class="scanlines"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="home.html" class="logo-link">
+            <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+            </svg>
+            <span class="logo-text">Damilola.dev</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Let's <span class="text-gradient">Connect</span></h1>
+            <p>Ready to bring your intelligent system to life? Let's discuss your project and create something extraordinary together.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card glass">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Me</h3>
+                    <p>Drop me a line anytime</p>
+                    <a href="mailto:oladokedamilola7@gmail.com" class="contact-link">
+                        oladokedamilola7@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-card glass">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Let's connect professionally</p>
+                    <a href="https://www.linkedin.com/in/oladokedamilola" class="contact-link" target="_blank">
+                        linkedin.com/in/oladokedamilola
+                    </a>
+                </div>
+
+                <div class="contact-card glass">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Check out my code</p>
+                    <a href="https://github.com/oladokedamilola" class="contact-link" target="_blank">
+                        github.com/oladokedamilola
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Section -->
+    <section class="whatsapp-section">
+        <div class="container">
+            <div class="whatsapp-content glass">
+                <div class="whatsapp-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h2>Quick Chat on <span class="text-green">WhatsApp</span></h2>
+                <p>Need to discuss your project quickly? Send me a message on WhatsApp for instant communication and faster response times.</p>
+                <a href="https://wa.me/2349036125006?text=Hi%20Damilola,%20I'm%20interested%20in%20discussing%20a%20Python%20backend%20or%20AI%20project.%20Can%20we%20chat?" 
+                   target="_blank"
+                   class="btn btn-green">
+                    <i class="fab fa-whatsapp"></i>
+                    Start WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Send Me a <span class="text-gradient">Message</span></h2>
+                <p class="section-subtitle">Tell me about your project and let's start building something intelligent</p>
+            </div>
+
+            <div class="form-container glass">
+                <form id="contact-form" class="space-y-6">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+234 XXX XXX XXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" name="company" class="form-input" placeholder="Your Company Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">What do you need help with?</label>
+                        <select id="projectType" name="projectType" class="form-select">
+                            <option value="">Choose your project type</option>
+                            <option value="backend-api">Backend System or API</option>
+                            <option value="ai-automation">AI Integration or Automation</option>
+                            <option value="data-system">Data Analytics or Processing</option>
+                            <option value="full-stack-web-application">Full Stack Web Application Development</option>
+                            <option value="technical-advice">Technical Consultation</option>
+                            <option value="project-improvement">Improve Existing Project</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Project Budget</label>
+                        <select id="budget" name="budget" class="form-select">
+                            <option value="">Select budget range</option>
+                            <option value="under-1k">Under $1,000 USD</option>
+                            <option value="1k-2.5k">$1,000 - $2,500 USD</option>
+                            <option value="2.5k-5k">$2,500 - $5,000 USD</option>
+                            <option value="5k-10k">$5,000 - $10,000 USD</option>
+                            <option value="10k-25k">$10,000 - $25,000 USD</option>
+                            <option value="25k-plus">$25,000+ USD</option>
+                            <option value="100k-250k">₦100,000 - ₦250,000</option>
+                            <option value="250k-500k">₦250,000 - ₦500,000</option>
+                            <option value="500k-1m">₦500,000 - ₦1,000,000</option>
+                            <option value="1m-2m">₦1,000,000 - ₦2,000,000</option>
+                            <option value="2m-plus">₦2,000,000+</option>
+                            <option value="discuss">Let's discuss budget</option>
+                            <option value="not-sure">Not sure yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Project Timeline</label>
+                        <select id="timeline" name="timeline" class="form-select">
+                            <option value="">Select timeline</option>
+                            <option value="asap">ASAP</option>
+                            <option value="1-month">Within 1 month</option>
+                            <option value="3-months">1-3 months</option>
+                            <option value="6-months">3-6 months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" class="form-textarea" required rows="6" placeholder="Tell me about your project. What are your goals? What features do you need? Any specific requirements or preferences?"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span>I'd like to receive updates about new projects and AI/backend development tips</span>
+                        </div>
+                    </div>
+
+                    <div class="btn-center">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </div>
+
+                    <div id="form-status" class="form-status">
+                        <!-- Status messages will appear here -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="social-section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Follow My <span class="text-gradient">Journey</span></h2>
+                <p class="section-subtitle">Connect with me on professional platforms and stay updated with my latest projects</p>
+            </div>
+
+            <div class="social-grid">
+                <div class="social-card glass">
+                    <div class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Explore my code and open-source projects</p>
+                    <a href="https://github.com/oladokedamilola" class="contact-link" target="_blank">
+                        Visit GitHub
+                    </a>
+                </div>
+                
+                <div class="social-card glass">
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally and see my experience</p>
+                    <a href="https://www.linkedin.com/in/oladokedamilola" class="contact-link" target="_blank">
+                        Visit LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="section-subtitle">Quick answers to common questions about working together</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h3>How long does a typical backend project take?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary depending on complexity. A simple API backend typically takes 2-4 weeks, while complex systems with AI integration can take 2-6 months. I'll provide a detailed timeline during our initial consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h3>What's included in your backend development services?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>My services include custom backend development, API design, database architecture, AI model integration, testing, deployment, and post-launch support. I also offer ongoing maintenance and technical guidance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h3>Do you work with clients remotely?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! I work with clients worldwide. Through video calls, project management tools, and regular communication, I ensure smooth collaboration regardless of location. Time zone differences are managed effectively.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h3>What technologies do you specialize in?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I specialize in Python backend technologies including Django, Flask, FastAPI, and various databases (MySQL, PostgreSQL). For AI/ML, I work with TensorFlow, scikit-learn, Hugging Face, and Azure OpenAI services.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-question">
+                        <h3>How do you handle project revisions?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I include 2-3 rounds of revisions in most project packages. Additional revisions are handled at an hourly rate. I believe in getting it right, so I work closely with clients throughout the process to minimize major changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="modal-title">Message Sent Successfully!</h3>
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Thank you for reaching out! I've received your message and will get back to you within 24 hours.</p>
+            <p class="modal-subtext">Looking forward to connecting with you!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn" id="modalOk">Got It!</button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2025 Damilola Oladoke. Building intelligent systems for startups.</p>
+        </div>
+    </footer>
+
+
+    <script>
+// Debug script - add this to test if the menu works
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    console.log('Debug: Menu toggle found:', menuToggle);
+    console.log('Debug: Nav links found:', navLinks);
+    
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            console.log('Debug: Menu toggle clicked!');
+            console.log('Debug: Current navLinks classes:', navLinks.className);
+            
+            // Toggle the active class
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            
+            console.log('Debug: After toggle - navLinks classes:', navLinks.className);
+            console.log('Debug: After toggle - menuToggle classes:', menuToggle.className);
+        });
+    } else {
+        console.error('Debug: Could not find menu elements!');
+    }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

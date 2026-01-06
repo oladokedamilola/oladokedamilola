@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damilola Oladoke - Python Backend & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+         <!-- Favicon for most browsers -->
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="assets/img/fav.png">
+
+    <!-- Favicon for older IE browsers -->
+    <link rel="shortcut icon" href="assets/img/fav.png">
+
+    <meta name="description" content="Damilola Oladoke - Python Backend & AI Developer. I build fast, scalable, AI-powered backend systems that help startups automate processes and make intelligent decisions.">  
+    <style>
+section[id] {
+    scroll-margin-top: 90px; /* Navbar height + some padding */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    section[id] {
+        scroll-margin-top: 80px; /* Slightly less on mobile if needed */
+    }
+}
+    </style>
+
+    <style>
+/* ===== HOME PAGE NAVIGATION - STANDALONE CSS ===== */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+#navbar .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* Logo styles */
+#navbar .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+#navbar .logo-svg {
+    width: 40px;
+    height: 40px;
+}
+
+#navbar .logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF5E00, #00B2FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 94, 0, 0.3);
+}
+
+/* Desktop navigation links */
+#navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#navbar .nav-links a:hover {
+    opacity: 1;
+    color: #FF5E00;
+}
+
+#navbar .nav-links a.active {
+    opacity: 1;
+    color: #FF5E00;
+}
+
+/* Desktop hover/active effects */
+#navbar .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF5E00, #00B2FF);
+    transition: width 0.3s ease;
+}
+
+#navbar .nav-links a:hover::after,
+#navbar .nav-links a.active::after {
+    width: 80%;
+}
+
+/* Menu toggle (hidden on desktop) */
+#navbar .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+    padding: 8px;
+}
+
+#navbar .menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background: #FF5E00;
+    transition: all 0.3s ease;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Surface Pro 7 (912px) - Adjust before collapse */
+@media (max-width: 912px) {
+    #navbar .nav-links {
+        gap: 1rem;
+    }
+    
+    #navbar .nav-links a {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    
+    #navbar .logo-text {
+        font-size: 1.3rem;
+    }
+}
+
+/* Asus Zenbook Fold (853px) and below - COLLAPSE HERE */
+@media (max-width: 853px) {
+    #navbar .menu-toggle {
+        display: flex;
+    }
+    
+    #navbar .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        overflow: hidden;
+        transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0;
+        gap: 0;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 999;
+    }
+    
+    #navbar .nav-links.active {
+        height: calc(100vh - 70px);
+        padding: 1.5rem 0;
+        overflow-y: auto;
+    }
+    
+    /* Mobile navigation items */
+    #navbar .nav-links li {
+        width: 90%;
+        max-width: 300px;
+        margin: 0.5rem 0;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+    }
+    
+    #navbar .nav-links.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Staggered animation delays for mobile menu items */
+    #navbar .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
+    #navbar .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
+    #navbar .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
+    #navbar .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
+    #navbar .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
+    #navbar .nav-links.active li:nth-child(6) { transition-delay: 0.35s; }
+    
+    #navbar .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 0;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+    }
+    
+    /* Hide desktop effects on mobile */
+    #navbar .nav-links a::after {
+        display: none;
+    }
+    
+    #navbar .nav-links a:hover {
+        background: rgba(255, 94, 0, 0.1);
+        border-color: rgba(255, 94, 0, 0.3);
+        transform: translateY(-2px);
+    }
+    
+    #navbar .nav-links a.active {
+        background: rgba(255, 94, 0, 0.15);
+        border: 1px solid #FF5E00;
+        box-shadow: 0 0 20px rgba(255, 94, 0, 0.3);
+    }
+    
+    #navbar .nav-links a.active:hover {
+        background: rgba(255, 94, 0, 0.2);
+        transform: none;
+    }
+}
+
+/* Nest Hub (1024x600) - special handling for short screens */
+@media (max-width: 1024px) and (max-height: 700px) {
+    #navbar .nav-container {
+        height: 60px;
+    }
+    
+    #navbar .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    #navbar .logo-svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Adjust mobile menu position for Nest Hub */
+    #navbar .nav-links {
+        top: 60px;
+    }
+    
+    #navbar .nav-links.active {
+        height: calc(100vh - 60px);
+        padding: 1rem 0;
+    }
+    
+    #navbar .nav-links li {
+        margin: 0.3rem 0;
+    }
+    
+    #navbar .nav-links a {
+        padding: 0.8rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    #navbar .nav-container {
+        padding: 0 1rem;
+        height: 65px;
+    }
+    
+    #navbar .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    #navbar .logo-svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    #navbar .nav-links {
+        top: 65px;
+    }
+    
+    #navbar .nav-links.active {
+        height: calc(100vh - 65px);
+        padding: 1rem 0;
+    }
+    
+    #navbar .nav-links a {
+        padding: 0.9rem;
+        font-size: 15px;
+    }
+    
+    #navbar .nav-links li {
+        max-width: 280px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    #navbar .nav-container {
+        padding: 0 0.75rem;
+        height: 60px;
+    }
+    
+    #navbar .logo-text {
+        font-size: 1rem;
+    }
+    
+    #navbar .logo-svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    #navbar .nav-links {
+        top: 60px;
+    }
+    
+    #navbar .nav-links.active {
+        height: calc(100vh - 60px);
+        padding: 0.75rem 0;
+    }
+    
+    #navbar .nav-links a {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+    
+    #navbar .nav-links li {
+        max-width: 260px;
+    }
+}
+
+/* Menu toggle animation */
+#navbar .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+#navbar .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#navbar .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/* Backdrop for mobile menu */
+.nav-backdrop {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 49;
+}
+
+@media (max-height: 700px) {
+    .nav-backdrop {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+}
+</style>
+</head>
+<body class="bg-deep-blue text-white">
+        <!-- Background Elements -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+    <div class="scanlines"></div>
+
+       <!-- Floating Particles -->
+    <div id="particles"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo-link">
+            <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+            </svg>
+            <span class="logo-text">Damilola.dev</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="text-gradient">Damilola Oladoke</span></h1>
+            <p>Python Backend & AI Developer · Building Intelligent Systems for Startups</p>
+            <p class="text-light-gray">I build fast, scalable, AI-powered backend systems that help startups automate processes and make intelligent decisions.</p>
+            <div class="cta-buttons">
+                <a href="portfolio.html" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View My Work
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="bg-deep-blue/30 section-scroll-animation">
+    <div class="container">
+        <div class="about-content">
+            <!-- Content -->
+            <div class="about-text">
+                <h2 class="section-title">
+                    About <span class="text-gradient">Me</span>
+                </h2>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    I'm Damilola, a Python Backend & AI Developer who helps startups integrate intelligence into their web systems. I focus on building applications that don't just function well, but also leverage AI to automate processes and deliver real business value.
+                </p>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    With a mix of technical expertise and business understanding, I make sure every project is robust, scalable, and built to help your startup grow intelligently.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="about.html" class="btn btn-primary">
+                        Learn More About Me
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="profile-image">
+                <img src="assets/img/profile.jpg" alt="Damilola Oladoke" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Services Section -->
+<section id="services" class="bg-deep-blue/50 section-scroll-animation">
+    <div class="container">
+        <div class="text-center mb-16">
+            <h2 class="section-title">
+                My <span class="text-gradient">Services</span>
+            </h2>
+            <p class="section-subtitle">
+                Everything you need to build intelligent backend systems for your business
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card glass">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Integration & Development</h3>
+                <p>Building intelligent systems with machine learning, natural language processing, and AI model integration for automated decision-making.</p>
+                <ul class="text-gray-400 text-sm space-y-2 mt-4">
+                    <li> Machine Learning Models</li>
+                    <li> Natural Language Processing</li>
+                    <li> Predictive Analytics</li>
+                </ul>
+            </div>
+            
+            <div class="service-card glass">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Creating robust, scalable backend systems using Python frameworks like Django and Flask with proper database architecture and API design.</p>
+                <ul class="text-gray-400 text-sm space-y-2 mt-4">
+                    <li> Django & Flask Development</li>
+                    <li> REST API Design</li>
+                    <li> Database Architecture</li>
+                </ul>
+            </div>
+            
+            <div class="service-card glass">
+                <div class="service-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Process Automation</h3>
+                <p>Automating business workflows and data processing pipelines to improve efficiency and reduce manual intervention.</p>
+                <ul class="text-gray-400 text-sm space-y-2 mt-4">
+                    <li> Workflow Automation</li>
+                    <li> Data Pipeline Development</li>
+                    <li> System Integration</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Full-Stack Web Application Development</h3>
+                <p>End-to-end development of modern, responsive, and scalable web applications — from backend logic to clean, intuitive interfaces.</p>
+                <ul class="text-gray-400 text-sm space-y-2 mt-4">
+                    <li> Responsive Frontend Design (HTML, CSS, JS, Bootstrap)</li>
+                    <li> Scalable Backend Architecture</li>
+                    <li> Secure Deployment & Maintenance</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data-Driven Systems & Analytics</h3>
+                <p>Transforming raw data into actionable insights with dashboards, reports, and intelligent analytics powered by AI and Python.</p>
+                <ul class="text-gray-400 text-sm space-y-2 mt-4">
+                    <li> Sentiment & Predictive Analysis</li>
+                    <li> Data Visualization (Chart.js, Matplotlib)</li>
+                    <li> Reporting & Decision Support Tools</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass">
+                <div class="service-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3>Data Intelligence & Analytics Systems</h3>
+                <p>Transforming raw data into interactive dashboards and actionable insights using Python, Chart.js, and machine learning analytics.</p>
+                <ul class="text-gray-400 text-sm space-y-2 mt-4">
+                    <li> Real-Time Data Visualization</li>
+                    <li> Sentiment & Predictive Analysis</li>
+                    <li> Insight Dashboards for Businesses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+   <!-- Skills Section -->
+<section id="skills" class="bg-deep-blue/20 section-scroll-animation">
+    <div class="container">
+        <div class="text-center mb-16">
+            <h2 class="section-title">
+                What I Use to Build <span class="text-gradient">Your Systems</span>
+            </h2>
+            <p class="section-subtitle">
+                The tools and technologies that power modern, intelligent applications
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Python -->
+            <div class="skill-card glass">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>Advanced Python development for backend systems, data processing, and machine learning applications.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 95%"></div>
+                </div>
+                <span class="skill-level">Expert Level</span>
+            </div>
+
+            <!-- Django & Flask -->
+            <div class="skill-card glass">
+                <div class="skill-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Django & Flask</h3>
+                <p>Robust web applications with Python frameworks, including REST APIs, authentication, and database management.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 90%"></div>
+                </div>
+                <span class="skill-level">Advanced Level</span>
+            </div>
+
+            <!-- AI/ML -->
+            <div class="skill-card glass">
+                <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI & Machine Learning</h3>
+                <p>Integration of ML models, NLP processing, and AI capabilities using modern frameworks and cloud services.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 85%"></div>
+                </div>
+                <span class="skill-level">Advanced Level</span>
+            </div>
+
+            <!-- API Design & Security -->
+            <div class="skill-card glass">
+                <div class="skill-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>API Design & Security</h3>
+                <p>Designing secure, efficient REST APIs with authentication, rate limiting, and proper request handling using Django REST Framework and Flask.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 88%"></div>
+                </div>
+                <span class="skill-level">Advanced Level</span>
+            </div>
+
+            <!-- Databases & Data Management -->
+            <div class="skill-card glass">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Databases & Data Management</h3>
+                <p>Building efficient, well-structured databases with PostgreSQL, MySQL, and SQLite. Skilled in schema design, migrations, and ORM optimization.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 90%"></div>
+                </div>
+                <span class="skill-level">Advanced Level</span>
+            </div>
+
+            <!-- Deployment & DevOps -->
+            <div class="skill-card glass">
+                <div class="skill-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h3>Deployment & DevOps</h3>
+                <p>Deploying production-ready web applications using Docker, and cloud-based workflows, with version control via Git and CI/CD pipelines.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 80%"></div>
+                </div>
+                <span class="skill-level">Intermediate Level</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Why Choose Me Section -->
+    <section class="bg-deep-blue/30">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">
+                    Why Choose <span class="text-gradient">Me</span>
+                </h2>
+                <p class="section-subtitle">
+                    I deliver backend systems that not only perform exceptionally but also drive real business intelligence
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Development</h3>
+                    <p>Quality systems delivered on time, every time</p>
+                </div>
+
+                <div class="feature-card glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Architecture</h3>
+                    <p>Robust security practices and API protection</p>
+                </div>
+
+                <div class="feature-card glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered</h3>
+                    <p>Intelligent features that learn and adapt</p>
+                </div>
+
+                <div class="feature-card glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>I'm here even after your system goes live</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Portfolio Preview Section -->
+<section id="portfolio" class="bg-deep-blue/30 section-scroll-animation">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">
+                    Recent <span class="text-gradient">Work</span>
+                </h2>
+                <p class="section-subtitle">
+                    See how I've helped startups build intelligent backend systems
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- CyberSentiment -->
+                <div class="portfolio-card glass">
+                    <div class="portfolio-emoji">🧠</div>
+                    <h3>CyberSentiment – AI Threat Intelligence</h3>
+                    <p>Cybersecurity platform that monitors and analyzes social media discussions in real time using ML models.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">scikit-learn</span>
+                    </div>
+                    <a href="portfolio.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- AI Career Chatbot -->
+                <div class="portfolio-card glass">
+                    <div class="portfolio-emoji">🎓</div>
+                    <h3>AI Career Guidance Chatbot</h3>
+                    <p>AI-powered career advisor using Django and Azure OpenAI to provide personalized recommendations.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Azure OpenAI</span>
+                    </div>
+                    <a href="portfolio.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Prostate Cancer Prediction System -->
+                <div class="portfolio-card glass">
+                    <div class="portfolio-emoji">⚕️</div>
+                    <h3>Prostate Cancer Prediction System</h3>
+                    <p>Healthcare AI system with 99.75% accuracy for early cancer detection using ANN and Flask web application.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <a href="portfolio.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="portfolio.html" class="btn btn-primary">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+<section id="contact" class="section-scroll-animation">
+        <div class="container">
+            <div class="cta-section glass">
+                <h2 class="section-title">
+                    Ready to Build Your <span class="text-gradient">Intelligent System?</span>
+                </h2>
+                <p class="section-subtitle">
+                    Let's turn your ideas into a robust backend system that automates processes and makes intelligent decisions. 
+                    From concept to deployment, I'll be with you every step of the way.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Start Your Project Today
+                    </a>
+                    <a href="portfolio.html" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/oladokedamilola" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/oladokedamilola" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <p class="copyright">© 2025 Damilola Oladoke. Building intelligent systems for startups.</p>
+        </div>
+    </footer>
+
+
+  <script>
+// Enhanced mobile navigation script with proper scrolling offset
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navLinksItems = document.querySelectorAll('.nav-link');
+    const navbar = document.getElementById('navbar');
+    
+    console.log('Mobile nav elements found:', { menuToggle, navLinks, navLinksItems, navbar });
+    
+    if (menuToggle && navLinks) {
+        // Calculate navbar height for offset
+        const navbarHeight = navbar ? navbar.offsetHeight : 70; // Fallback to 70px
+        
+        // Function to close mobile menu
+        function closeMobileMenu() {
+            console.log('Closing mobile menu');
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Remove backdrop if exists
+            const backdrop = document.querySelector('.nav-backdrop');
+            if (backdrop) {
+                backdrop.remove();
+            }
+        }
+        
+        // Function to open mobile menu
+        function openMobileMenu() {
+            console.log('Opening mobile menu');
+            navLinks.classList.add('active');
+            menuToggle.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Add backdrop for mobile
+            const backdrop = document.createElement('div');
+            backdrop.className = 'nav-backdrop';
+            backdrop.style.cssText = `
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(5px);
+                z-index: 49;
+            `;
+            backdrop.addEventListener('click', closeMobileMenu);
+            document.body.appendChild(backdrop);
+        }
+        
+        // Function to scroll to section with offset
+        function scrollToSection(sectionId) {
+            const targetSection = document.querySelector(sectionId);
+            if (targetSection) {
+                const targetPosition = targetSection.offsetTop - navbarHeight - 20; // Extra 20px padding
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                console.log('Scrolling to:', sectionId, 'with offset:', navbarHeight);
+            }
+        }
+        
+        // Toggle mobile menu when hamburger is clicked
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            console.log('Menu toggle clicked');
+            
+            const isActive = navLinks.classList.contains('active');
+            console.log('Is active:', isActive);
+            
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        
+        // Handle nav link clicks - close menu and scroll to section
+        navLinksItems.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                console.log('Nav link clicked:', href);
+                
+                // Close the mobile menu immediately
+                closeMobileMenu();
+                
+                // Handle internal anchor links
+                if (href.startsWith('#') && href.length > 1) {
+                    e.preventDefault(); // Prevent default anchor behavior
+                    
+                    // Small delay to ensure menu closes before scrolling
+                    setTimeout(() => {
+                        scrollToSection(href);
+                    }, 100);
+                }
+                // External links will follow normally
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (navLinks.classList.contains('active') && 
+                !navLinks.contains(e.target) && 
+                !menuToggle.contains(e.target)) {
+                console.log('Click outside - closing menu');
+                closeMobileMenu();
+            }
+        });
+        
+        // Close mobile menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+                console.log('Window resized - closing menu');
+                closeMobileMenu();
+            }
+        });
+        
+        // Close mobile menu with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                console.log('Escape pressed - closing menu');
+                closeMobileMenu();
+            }
+        });
+        
+    } else {
+        console.error('Mobile navigation elements not found');
+    }
+});
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles', 'assets/particles.json', function() {
+            console.log('Particles.js config loaded');
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

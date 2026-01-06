@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Damilola Oladoke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+     <!-- Favicon for most browsers -->
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="assets/img/fav.png">
+
+    <!-- Favicon for older IE browsers -->
+    <link rel="shortcut icon" href="assets/img/fav.png">
+</head>
+<body class="bg-deep-blue text-white">
+    <!-- Background Elements -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+    <div class="scanlines"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="home.html" class="logo-link">
+            <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+            </svg>
+            <span class="logo-text">Damilola.dev</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>My <span class="text-gradient">Portfolio</span></h1>
+            <p>A showcase of projects that demonstrate my passion for building intelligent backend systems</p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                
+                <!-- CyberSentiment -->
+                <div class="project-card glass">
+                    <div class="project-image-container">
+                        <img src="assets/img/projects/cybersentiment/dashboard.jpg" alt="CyberSentiment Dashboard" class="project-main-image" onerror="this.style.display='none'">
+                        <div class="project-image-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('cybersentiment-gallery')">
+                                <i class="fas fa-images"></i>
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-emoji">🧠</div>
+                    <h3 class="project-title">CyberSentiment – AI Threat Intelligence Platform</h3>
+                    <div class="project-meta">
+                        <span class="project-period">09/2025 – 11/2025</span>
+                        <span class="project-role">Full-Stack Developer (Flask + ML)</span>
+                    </div>
+                    <p class="project-description">Developed a cybersecurity threat intelligence platform that monitors and analyzes Twitter and Reddit discussions in real time. Built automated data pipelines and integrated ML models (scikit-learn, VADER, NLTK) for sentiment and risk classification.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">VADER</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://cybersentiment.pythonanywhere.com/" class="project-link" target="_blank">
+                            View Live Project
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="view-gallery-btn" onclick="openGallery('cybersentiment-gallery')">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Lassa Fever Diagnosis System -->
+                <div class="project-card glass">
+                    <div class="project-image-container">
+                        <img src="assets/img/projects/lassa-fever/diagnosis-form1.png" alt="Lassa Fever Diagnosis System" class="project-main-image" onerror="this.style.display='none'">
+                        <div class="project-image-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('lassa-fever-gallery')">
+                                <i class="fas fa-images"></i>
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-emoji">🏥</div>
+                    <h3 class="project-title">Lassa Fever Diagnosis System</h3>
+                    <div class="project-meta">
+                        <span class="project-period">2024</span>
+                        <span class="project-role">Full-Stack Developer (Flask + Fuzzy Logic)</span>
+                    </div>
+                    <p class="project-description">A web-based intelligent diagnosis system using fuzzy logic to assist healthcare professionals in detecting Lassa fever early. Processes 10 key symptoms to provide diagnosis with confidence scores and generates downloadable medical reports.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Fuzzy Logic</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PDF/Word Export</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/oladokedamilola/lassa-fever-diagnosis-system" class="project-link" target="_blank">
+                            View on GitHub
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="view-gallery-btn" onclick="openGallery('lassa-fever-gallery')">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Prostate Cancer Prediction System -->
+                <div class="project-card glass">
+                    <div class="project-image-container">
+                        <img src="assets/img/projects/prostate-cancer/diagnosis-page1.png" alt="Prostate Cancer Prediction System" class="project-main-image" onerror="this.style.display='none'">
+                        <div class="project-image-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('prostate-cancer-gallery')">
+                                <i class="fas fa-images"></i>
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-emoji">⚕️</div>
+                    <h3 class="project-title">Prostate Cancer Prediction System</h3>
+                    <div class="project-meta">
+                        <span class="project-period">2024</span>
+                        <span class="project-role">ML Engineer & Full-Stack Developer</span>
+                    </div>
+                    <p class="project-description">Developed an AI-powered diagnostic system combining synthetic dataset generation, ANN model (99.75% accuracy), and Flask web application for early prostate cancer detection. Features secure healthcare worker access and medical report generation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow/Keras</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">ANN</span>
+                        <span class="tech-tag">Synthetic Data</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Bootstrap 5</span>
+                        <span class="tech-tag">Healthcare AI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/oladokedamilola/prostate-cancer-prediction" class="project-link" target="_blank">
+                            View on GitHub
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="view-gallery-btn" onclick="openGallery('prostate-cancer-gallery')">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Intrusion Detection System -->
+                <div class="project-card glass">
+                    <div class="project-image-container">
+                        <img src="assets/img/projects/ids-system/feature_importance.png" alt="Intrusion Detection System" class="project-main-image" onerror="this.style.display='none'">
+                        <div class="project-image-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('ids-system-gallery')">
+                                <i class="fas fa-images"></i>
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-emoji">🛡️</div>
+                    <h3 class="project-title">ML-Based Intrusion Detection System</h3>
+                    <div class="project-meta">
+                        <span class="project-period">2024</span>
+                        <span class="project-role">Machine Learning Engineer & Data Scientist</span>
+                    </div>
+                    <p class="project-description">Developed and evaluated a machine learning-based Intrusion Detection System using the NSL-KDD dataset. Implemented Logistic Regression, Decision Tree, and Random Forest models achieving 99.61% accuracy with only 0.23% false positive rate.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Cybersecurity</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/oladokedamilola/intrusion-detection-system" class="project-link" target="_blank">
+                            View on GitHub
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="view-gallery-btn" onclick="openGallery('ids-system-gallery')">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Career Chatbot -->
+                <div class="project-card glass">
+                    <div class="project-image-container">
+                        <img src="assets/img/projects/career-chatbot/chatbot-interface.png" alt="AI Career Chatbot" class="project-main-image" onerror="this.style.display='none'">
+                        <div class="project-image-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('career-chatbot-gallery')">
+                                <i class="fas fa-images"></i>
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-emoji">🎓</div>
+                    <h3 class="project-title">AI Career Guidance Chatbot</h3>
+                    <div class="project-meta">
+                        <span class="project-period">04/2025 – 06/2025</span>
+                        <span class="project-role">Backend Developer (Django + Azure OpenAI)</span>
+                    </div>
+                    <p class="project-description">Built an AI-powered career guidance chatbot using Django and Azure OpenAI API. Deployed on PythonAnywhere to deliver personalized recommendations 24/7, reducing manual advisory workloads by 40%.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Azure OpenAI</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/oladokedamilola/smart-career-counselor" class="project-link" target="_blank">
+                            View on GitHub
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="view-gallery-btn" onclick="openGallery('career-chatbot-gallery')">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- EduPortfolio -->
+                <div class="project-card glass">
+                    <div class="project-image-container">
+                        <img src="assets/img/eduportfolio-main.jpg" alt="EduPortfolio Platform" class="project-main-image" onerror="this.style.display='none'">
+                        <div class="project-image-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('eduportfolio-gallery')">
+                                <i class="fas fa-images"></i>
+                                View Gallery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-emoji">💼</div>
+                    <h3 class="project-title">EduPortfolio – Academic Showcase Platform</h3>
+                    <div class="project-meta">
+                        <span class="project-period">01/2025 – 03/2025</span>
+                        <span class="project-role">Backend Developer (Django)</span>
+                    </div>
+                    <p class="project-description">Developed an academic portfolio platform for students to showcase projects, research, and internships. Implemented GitHub-inspired profiles, dashboards, and search with Django and Bootstrap 5.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Bootstrap 5</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/oladokedamilola/student-portfolio-website" class="project-link" target="_blank">
+                            View on GitHub
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="view-gallery-btn" onclick="openGallery('eduportfolio-gallery')">
+                            <i class="fas fa-images"></i>
+                            View Gallery
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modals -->
+    <!-- CyberSentiment Gallery -->
+    <div id="cybersentiment-gallery" class="gallery-modal">
+        <div class="gallery-modal-content glass">
+            <div class="gallery-header">
+                <h2 class="gallery-title">CyberSentiment Project Gallery</h2>
+                <button class="close-gallery" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-body">
+                <div class="gallery-grid">
+                    <!-- Dashboard -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/dashboard.jpg" alt="Main Dashboard" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Main Dashboard</h4>
+                            <p class="gallery-item-description">Overview of real-time threat monitoring with key metrics and alerts display.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- All Alerts -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/all-alerts.jpg" alt="All Alerts Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Alerts Management</h4>
+                            <p class="gallery-item-description">Comprehensive view of all security alerts with filtering and categorization.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- All Posts -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/all-posts.jpg" alt="All Posts Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Posts Monitoring</h4>
+                            <p class="gallery-item-description">Real-time monitoring of social media posts from Twitter and Reddit.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Architectural Diagram -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/architectural-diagram.jpg" alt="System Architecture" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">System Architecture</h4>
+                            <p class="gallery-item-description">High-level architecture diagram showing data flow and component integration.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Flow -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/data-flow.jpg" alt="Data Flow Diagram" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Data Flow Diagram</h4>
+                            <p class="gallery-item-description">Detailed data processing pipeline from collection to analysis and alerting.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ERD -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/erd.jpg" alt="Database Schema" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Database Schema</h4>
+                            <p class="gallery-item-description">Entity Relationship Diagram showing the MySQL database structure.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ML Model -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/model.jpg" alt="ML Model Architecture" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">ML Model Architecture</h4>
+                            <p class="gallery-item-description">Machine learning model structure for sentiment analysis and threat classification.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Notifications -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/notifications.jpg" alt="Notifications System" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Notifications System</h4>
+                            <p class="gallery-item-description">Real-time alert notifications and user notification management interface.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Page -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/search-page.jpg" alt="Advanced Search" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Advanced Search</h4>
+                            <p class="gallery-item-description">Powerful search functionality with filters for posts, alerts, and sentiment analysis.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Sentiments Pages -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/sentiments-page.jpg" alt="Sentiment Analysis" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Sentiment Analysis</h4>
+                            <p class="gallery-item-description">Detailed sentiment analysis results with positive/negative/neutral classification.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/sentiments-page2.jpg" alt="Sentiment Trends" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Sentiment Trends</h4>
+                            <p class="gallery-item-description">Historical sentiment trends and pattern analysis over time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/cybersentiment/sentiments-page3.jpg" alt="Sentiment Details" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Sentiment Details</h4>
+                            <p class="gallery-item-description">In-depth sentiment analysis with confidence scores and contextual insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Lassa Fever Diagnosis System Gallery -->
+    <div id="lassa-fever-gallery" class="gallery-modal">
+        <div class="gallery-modal-content glass">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Lassa Fever Diagnosis System Gallery</h2>
+                <button class="close-gallery" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-body">
+                <div class="gallery-grid">
+                    <!-- Home Page -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/home-page1.png" alt="Home Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Home Page</h4>
+                            <p class="gallery-item-description">Landing page introducing the system's purpose with navigation to login and registration sections.</p>
+                        </div>
+                    </div>
+                    <!-- Home Page -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/home-page2.png" alt="Home Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Home Page</h4>
+                            <p class="gallery-item-description">Landing page introducing the system's purpose with navigation to login and registration sections.</p>
+                        </div>
+                    </div>
+                    <!-- Home Page -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/home-page3.png" alt="Home Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Home Page</h4>
+                            <p class="gallery-item-description">Landing page introducing the system's purpose with navigation to login and registration sections.</p>
+                        </div>
+                    </div>
+                        <!-- Home Page -->
+                        <div class="gallery-item">
+                            <img src="assets/img/projects/lassa-fever/home-page4.png" alt="Home Page" class="gallery-image" onerror="this.style.display='none'">
+                            <div class="gallery-item-content">
+                                <h4 class="gallery-item-title">Home Page</h4>
+                                <p class="gallery-item-description">Landing page introducing the system's purpose with navigation to login and registration sections.</p>
+                            </div>
+                        </div>
+                    
+                    
+                    <!-- Diagnosis Form -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/diagnosis-form1.png" alt="Diagnosis Form" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Diagnosis Interface</h4>
+                            <p class="gallery-item-description">Core diagnosis page with interactive sliders for 10 Lassa fever symptoms and patient data entry.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/diagnosis-form2.png" alt="Diagnosis Form" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Diagnosis Interface</h4>
+                            <p class="gallery-item-description">Core diagnosis page with interactive sliders for 10 Lassa fever symptoms and patient data entry.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Result Page -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/result-page.png" alt="Result Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Diagnosis Results</h4>
+                            <p class="gallery-item-description">Results page showing diagnosis outcome with confidence score and PDF/Word download options.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- History Page -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/history-page.png" alt="History Page" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Diagnosis History</h4>
+                            <p class="gallery-item-description">Timeline view of all previous diagnoses with patient details and results for record-keeping.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fuzzy Logic Diagram -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/fuzzy-logic-diagram.png" alt="Fuzzy Logic Architecture" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Fuzzy Logic Architecture</h4>
+                            <p class="gallery-item-description">Diagram showing the fuzzy logic engine processing symptom inputs through membership functions and rules.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- System Architecture -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/lassa-fever/system-architecture.png" alt="System Architecture" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">System Architecture</h4>
+                            <p class="gallery-item-description">Complete system architecture showing Flask backend, fuzzy logic engine, database, and frontend components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Career Chatbot Gallery - Updated with 4 specific images -->
+    <div id="career-chatbot-gallery" class="gallery-modal">
+        <div class="gallery-modal-content glass">
+            <div class="gallery-header">
+                <h2 class="gallery-title">AI Career Chatbot Gallery</h2>
+                <button class="close-gallery" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-body">
+                <div class="gallery-grid">
+                    <!-- Chatbot Interface -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/career-chatbot/chatbot-interface.png" alt="Chatbot Interface" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Chatbot Interface</h4>
+                            <p class="gallery-item-description">Clean, responsive chat interface powered by Azure OpenAI with real-time career guidance and personalized recommendations.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Architectural Diagram -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/career-chatbot/architectural-diagram.png" alt="Architectural Diagram" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">System Architecture</h4>
+                            <p class="gallery-item-description">High-level architecture showing Django backend, Azure OpenAI integration, MySQL database, and user interaction flow.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ERD Diagram -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/career-chatbot/erd-diagram.png" alt="ERD Diagram" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Database Schema (ERD)</h4>
+                            <p class="gallery-item-description">Entity Relationship Diagram showing user profiles, conversation history, career data, and analytics tables in MySQL.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Flow Diagram -->
+                    <div class="gallery-item">
+                        <img src="assets/img/projects/career-chatbot/data-flow-diagram.png" alt="Data Flow Diagram" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Data Flow Diagram</h4>
+                            <p class="gallery-item-description">Complete data processing pipeline from user input through AI processing to response generation and storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Prostate Cancer Prediction System Gallery - Updated -->
+<div id="prostate-cancer-gallery" class="gallery-modal">
+    <div class="gallery-modal-content glass">
+        <div class="gallery-header">
+            <h2 class="gallery-title">Prostate Cancer Prediction System Gallery</h2>
+            <button class="close-gallery" onclick="closeGallery()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="gallery-body">
+            <div class="gallery-grid">
+                <!-- Web Application: Home Page -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/home-page1.png" alt="Home Page" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Home Page</h4>
+                        <p class="gallery-item-description">Landing page introducing the AI-powered prostate cancer prediction system with navigation to key features.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/home-page2.png" alt="Home Page" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Home Page</h4>
+                        <p class="gallery-item-description">Landing page introducing the AI-powered prostate cancer prediction system with navigation to key features.</p>
+                    </div>
+                </div>
+                
+                <!-- Web Application: Diagnosis Form -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/diagnosis-page1.png" alt="Diagnosis Form" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Patient Diagnosis Form</h4>
+                        <p class="gallery-item-description">Comprehensive form for inputting 17 clinical features including age, PSA levels, symptoms, and medical history.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/diagnosis-page2.png" alt="Diagnosis Form" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Patient Diagnosis Form</h4>
+                        <p class="gallery-item-description">Comprehensive form for inputting 17 clinical features including age, PSA levels, symptoms, and medical history.</p>
+                    </div>
+                </div>
+                
+                <!-- Web Application: Results Page -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/results-page1.png" alt="Results Page" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Diagnosis Results</h4>
+                        <p class="gallery-item-description">Clear presentation of AI diagnosis with confidence levels and PDF/Word report generation for medical records.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/results-page2.png" alt="Results Page" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Diagnosis Results</h4>
+                        <p class="gallery-item-description">Clear presentation of AI diagnosis with confidence levels and PDF/Word report generation for medical records.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/download-prompt.png" alt="Results Page" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Download Prompt</h4>
+                        <p class="gallery-item-description">Prompt for downloading diagnosis results in PDF or Word format.</p>
+                    </div>
+                </div>
+                
+                <!-- ANN Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/ann_confusion_matrix.png" alt="ANN Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">ANN Confusion Matrix</h4>
+                        <p class="gallery-item-description">Artificial Neural Network confusion matrix showing 99.75% accuracy with only 4 false negatives and 7 false positives.</p>
+                    </div>
+                </div>
+                
+                <!-- ANN Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/ann_classification_report.png" alt="ANN Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">ANN Classification Report</h4>
+                        <p class="gallery-item-description">Detailed classification metrics: Precision=1.0, Recall=1.0, F1-Score=1.0 - Near-perfect performance for medical diagnosis.</p>
+                    </div>
+                </div>
+                
+                <!-- ANN Training Curves -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/ann_training_curves.png" alt="ANN Training Curves" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">ANN Training Curves</h4>
+                        <p class="gallery-item-description">Model training and validation curves showing excellent learning progress without overfitting across epochs.</p>
+                    </div>
+                </div>
+                
+                <!-- Random Forest Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/RandomForest_confusion_matrix.png" alt="Random Forest Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Random Forest Confusion Matrix</h4>
+                        <p class="gallery-item-description">Random Forest model achieving 98% accuracy with 1 false negative and 30 false positives for cancer detection.</p>
+                    </div>
+                </div>
+                
+                <!-- Random Forest Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/RandomForest_classification_report.png" alt="Random Forest Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Random Forest Classification Report</h4>
+                        <p class="gallery-item-description">Classification metrics: Precision=0.98, Recall=1.0, F1-Score=1.0 - Strong performance with excellent recall.</p>
+                    </div>
+                </div>
+                
+                <!-- SVM Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/SVM_confusion_matrix.png" alt="SVM Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">SVM Confusion Matrix</h4>
+                        <p class="gallery-item-description">Support Vector Machine confusion matrix showing 98% accuracy with 5 false negatives and 28 false positives.</p>
+                    </div>
+                </div>
+                
+                <!-- SVM Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/SVM_classification_report.png" alt="SVM Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">SVM Classification Report</h4>
+                        <p class="gallery-item-description">Classification metrics: Precision=0.98, Recall=1.0, F1-Score=1.0 - Consistent performance across metrics.</p>
+                    </div>
+                </div>
+                
+                <!-- Decision Tree Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/DecisionTree_confusion_matrix.png" alt="Decision Tree Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Decision Tree Confusion Matrix</h4>
+                        <p class="gallery-item-description">Decision Tree model performance metrics for prostate cancer prediction comparison.</p>
+                    </div>
+                </div>
+                
+                <!-- Decision Tree Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/prostate-cancer/DecisionTree_classification_report.png" alt="Decision Tree Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Decision Tree Classification Report</h4>
+                        <p class="gallery-item-description">Decision Tree classification metrics analysis showing model performance characteristics.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Intrusion Detection System Gallery - Updated -->
+<div id="ids-system-gallery" class="gallery-modal">
+    <div class="gallery-modal-content glass">
+        <div class="gallery-header">
+            <h2 class="gallery-title">Intrusion Detection System Gallery</h2>
+            <button class="close-gallery" onclick="closeGallery()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="gallery-body">
+            <div class="gallery-grid">
+                <!-- Logistic Regression Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/logistic-regression-confusion-matrix.png" alt="Logistic Regression Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Logistic Regression - Confusion Matrix</h4>
+                        <p class="gallery-item-description">Confusion matrix showing Logistic Regression performance: 95.62% accuracy with 3.21% false positive rate. Model demonstrates strong baseline performance for binary classification.</p>
+                    </div>
+                </div>
+                
+                <!-- Logistic Regression Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/logistic-regression-classification-report.png" alt="Logistic Regression Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Logistic Regression - Classification Report</h4>
+                        <p class="gallery-item-description">Detailed classification metrics: Precision=96.46%, Recall=94.37%, F1-Score=95.40%. Shows model's balanced performance across both normal and attack traffic classification.</p>
+                    </div>
+                </div>
+                
+                <!-- Decision Tree Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/decision-tree-confusion-matrix.png" alt="Decision Tree Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Decision Tree - Confusion Matrix</h4>
+                        <p class="gallery-item-description">Decision Tree confusion matrix achieving 99.49% accuracy with only 0.53% false positives. Significant improvement over logistic regression for intrusion detection.</p>
+                    </div>
+                </div>
+                
+                <!-- Decision Tree Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/decision-tree-classification-report.png" alt="Decision Tree Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Decision Tree - Classification Report</h4>
+                        <p class="gallery-item-description">Classification metrics: Precision=99.43%, Recall=99.50%, F1-Score=99.47%. Near-perfect balance between precision and recall with minimal misclassifications.</p>
+                    </div>
+                </div>
+                
+                <!-- Random Forest Confusion Matrix -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/random-forest-confusion-matrix.png" alt="Random Forest Confusion Matrix" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Random Forest - Confusion Matrix</h4>
+                        <p class="gallery-item-description">Random Forest achieves best performance: 99.61% accuracy with only 0.23% false positives. Ideal for production IDS where minimizing false alarms is critical.</p>
+                    </div>
+                </div>
+                
+                <!-- Random Forest Classification Report -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/random-forest-classification-report.png" alt="Random Forest Classification Report" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Random Forest - Classification Report</h4>
+                        <p class="gallery-item-description">Best performing model metrics: Precision=99.75%, Recall=99.43%, F1-Score=99.59%. Excellent balance across all metrics making it the recommended model for deployment.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Importance Analysis -->
+                <div class="gallery-item">
+                    <img src="assets/img/projects/ids-system/feature_importance.png" alt="Feature Importance Analysis" class="gallery-image" onerror="this.style.display='none'">
+                    <div class="gallery-item-content">
+                        <h4 class="gallery-item-title">Feature Importance Analysis</h4>
+                        <p class="gallery-item-description">Top network features identified by Random Forest as most important for intrusion detection. Highlights critical indicators like service type, protocol, and connection duration.</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- EduPortfolio Gallery -->
+    <div id="eduportfolio-gallery" class="gallery-modal">
+        <div class="gallery-modal-content glass">
+            <div class="gallery-header">
+                <h2 class="gallery-title">EduPortfolio Gallery</h2>
+                <button class="close-gallery" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-body">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/img/eduportfolio-profile.jpg" alt="Student Profile" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Student Profile</h4>
+                            <p class="gallery-item-description">GitHub-inspired profile pages showcasing student achievements and projects.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/eduportfolio-dashboard.jpg" alt="Project Dashboard" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Project Dashboard</h4>
+                            <p class="gallery-item-description">Centralized dashboard for managing and showcasing academic projects and research.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/eduportfolio-search.jpg" alt="Search Functionality" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Advanced Search</h4>
+                            <p class="gallery-item-description">Powerful search functionality to discover projects, skills, and student profiles.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/eduportfolio-admin.jpg" alt="Admin Panel" class="gallery-image" onerror="this.style.display='none'">
+                        <div class="gallery-item-content">
+                            <h4 class="gallery-item-title">Admin Panel</h4>
+                            <p class="gallery-item-description">Comprehensive admin interface for managing users, projects, and platform settings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <section class="portfolio-stats-section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Project <span class="text-gradient">Impact</span></h2>
+                <p class="section-subtitle">Numbers that reflect the success of our collaborations</p>
+            </div>
+
+            <div class="portfolio-stats-grid">
+                <div class="portfolio-stat-item glass">
+                    <div class="portfolio-stat-number">10+</div>
+                    <div class="portfolio-stat-label">Projects Completed</div>
+                </div>
+                <div class="portfolio-stat-item glass">
+                    <div class="portfolio-stat-number">8+</div>
+                    <div class="portfolio-stat-label">Happy Clients</div>
+                </div>
+                <div class="portfolio-stat-item glass">
+                    <div class="portfolio-stat-number">100%</div>
+                    <div class="portfolio-stat-label">Satisfaction Rate</div>
+                </div>
+                <div class="portfolio-stat-item glass">
+                    <div class="portfolio-stat-number">24/7</div>
+                    <div class="portfolio-stat-label">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Technologies I <span class="text-gradient">Work With</span></h2>
+                <p class="section-subtitle">The core technologies and tools I use to bring intelligent projects to life</p>
+            </div>
+
+            <div class="tech-grid">
+                <!-- Python -->
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Advanced Python development for backend systems, data processing, and machine learning applications.</p>
+                </div>
+
+                <!-- Django -->
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Django</h3>
+                    <p>Robust web applications with Django framework, including REST APIs, authentication, and database management.</p>
+                </div>
+
+                <!-- Flask -->
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Flask</h3>
+                    <p>Lightweight and flexible web applications with Flask for rapid prototyping and microservices.</p>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Integration of ML models, NLP processing, and AI capabilities using scikit-learn, TensorFlow, and Azure OpenAI.</p>
+                </div>
+
+                <!-- Databases -->
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <p>Expertise in MySQL and PostgreSQL for efficient data storage, retrieval, and management in web applications.</p>
+                </div>
+
+                <!-- APIs -->
+                <div class="tech-card glass">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>Design and implementation of RESTful APIs with proper documentation, security, and performance optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta-section glass">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="section-title">Ready to Start Your <span class="text-gradient">Project?</span></h2>
+                <p class="section-subtitle">
+                    Let's collaborate to create something amazing together. From concept to launch, I'll be with you every step of the way.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Start Your Project
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-user"></i>
+                        Learn More About Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+    <div class="lightbox-content glass">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <!-- Counter will be dynamically added by JavaScript -->
+        <img id="lightbox-image" class="lightbox-image" alt="Project Image">
+        <div class="lightbox-info">
+            <h3 id="lightbox-title" class="lightbox-title"></h3>
+            <p id="lightbox-description" class="lightbox-description"></p>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/oladokedamilola" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/oladokedamilola" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <p class="copyright">© 2025 Damilola Oladoke. Building intelligent systems for startups.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Gallery functionality
+    function openGallery(galleryId) {
+        console.log('Opening gallery:', galleryId);
+        
+        // Close any open galleries first
+        closeGallery();
+        
+        // Open the requested gallery
+        const gallery = document.getElementById(galleryId);
+        if (gallery) {
+            gallery.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            console.log('Gallery opened successfully');
+        } else {
+            console.error('Gallery not found:', galleryId);
+        }
+    }
+
+    function closeGallery() {
+        const galleries = document.querySelectorAll('.gallery-modal');
+        galleries.forEach(gallery => {
+            gallery.classList.remove('active');
+        });
+        document.body.style.overflow = 'auto';
+    }
+
+    // Lightbox functionality with slide animations
+    let currentLightboxIndex = 0;
+    let currentLightboxImages = [];
+    let isAnimating = false;
+
+    function openLightbox(imageElement, title, description) {
+        if (isAnimating) return;
+        
+        const lightbox = document.getElementById('lightbox-modal');
+        const lightboxContent = lightbox.querySelector('.lightbox-content');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDescription = document.getElementById('lightbox-description');
+        
+        // Reset animation classes
+        lightboxContent.className = 'lightbox-content glass';
+        
+        // Set lightbox content
+        lightboxImage.src = imageElement.src;
+        lightboxImage.alt = imageElement.alt;
+        lightboxTitle.textContent = title;
+        lightboxDescription.textContent = description;
+        
+        // Add loading animation
+        lightboxImage.classList.add('loading');
+        setTimeout(() => lightboxImage.classList.remove('loading'), 300);
+        
+        // Find all images in the current gallery
+        const gallery = imageElement.closest('.gallery-modal');
+        if (gallery) {
+            currentLightboxImages = Array.from(gallery.querySelectorAll('.gallery-image'));
+            currentLightboxIndex = currentLightboxImages.indexOf(imageElement);
+        }
+        
+        // Open lightbox with slide-in animation
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Add slide-in animation after a small delay
+        setTimeout(() => {
+            lightboxContent.classList.add('slide-in');
+        }, 50);
+        
+        // Update navigation and counter
+        updateLightboxNav();
+        updateLightboxCounter();
+    }
+
+    function closeLightbox() {
+        if (isAnimating) return;
+        
+        const lightbox = document.getElementById('lightbox-modal');
+        const lightboxContent = lightbox.querySelector('.lightbox-content');
+        
+        // Remove slide-in class and close
+        lightboxContent.classList.remove('slide-in');
+        
+        setTimeout(() => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            currentLightboxImages = [];
+            currentLightboxIndex = 0;
+        }, 300);
+    }
+
+    function navigateLightbox(direction) {
+        if (isAnimating || currentLightboxImages.length === 0) return;
+        
+        isAnimating = true;
+        const lightboxContent = document.querySelector('.lightbox-content');
+        const lightboxImage = document.getElementById('lightbox-image');
+        
+        // Determine slide direction
+        const slideClass = direction === 1 ? 'slide-right' : 'slide-left';
+        lightboxContent.classList.remove('slide-in');
+        lightboxContent.classList.add(slideClass);
+        
+        // Calculate new index
+        currentLightboxIndex += direction;
+        
+        // Loop around if at ends
+        if (currentLightboxIndex < 0) {
+            currentLightboxIndex = currentLightboxImages.length - 1;
+        } else if (currentLightboxIndex >= currentLightboxImages.length) {
+            currentLightboxIndex = 0;
+        }
+        
+        // Wait for slide-out animation to complete
+        setTimeout(() => {
+            const imageElement = currentLightboxImages[currentLightboxIndex];
+            const galleryItem = imageElement.closest('.gallery-item');
+            const title = galleryItem.querySelector('.gallery-item-title').textContent;
+            const description = galleryItem.querySelector('.gallery-item-description').textContent;
+            
+            // Update lightbox content
+            lightboxImage.src = imageElement.src;
+            lightboxImage.alt = imageElement.alt;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-description').textContent = description;
+            
+            // Add loading animation to new image
+            lightboxImage.classList.add('loading');
+            setTimeout(() => lightboxImage.classList.remove('loading'), 300);
+            
+            // Slide in from opposite direction
+            lightboxContent.classList.remove(slideClass);
+            const slideInClass = direction === 1 ? 'slide-left' : 'slide-right';
+            lightboxContent.classList.add(slideInClass);
+            
+            setTimeout(() => {
+                lightboxContent.classList.remove(slideInClass);
+                lightboxContent.classList.add('slide-in');
+                isAnimating = false;
+            }, 50);
+            
+            // Update navigation and counter
+            updateLightboxNav();
+            updateLightboxCounter();
+            
+        }, 400); // Match CSS transition duration
+    }
+
+    function updateLightboxNav() {
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        
+        if (currentLightboxImages.length <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        } else {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+        }
+    }
+
+    function updateLightboxCounter() {
+        let counter = document.querySelector('.lightbox-counter');
+        if (!counter) {
+            counter = document.createElement('div');
+            counter.className = 'lightbox-counter';
+            document.querySelector('.lightbox-content').appendChild(counter);
+        }
+        counter.textContent = `${currentLightboxIndex + 1} / ${currentLightboxImages.length}`;
+    }
+
+    // Initialize gallery image click events
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click event to all gallery images
+        document.querySelectorAll('.gallery-image').forEach(image => {
+            image.addEventListener('click', function() {
+                const galleryItem = this.closest('.gallery-item');
+                const title = galleryItem.querySelector('.gallery-item-title').textContent;
+                const description = galleryItem.querySelector('.gallery-item-description').textContent;
+                openLightbox(this, title, description);
+            });
+        });
+        
+        // Make gallery images keyboard accessible
+        document.querySelectorAll('.gallery-image').forEach(image => {
+            image.setAttribute('tabindex', '0');
+            image.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    const galleryItem = this.closest('.gallery-item');
+                    const title = galleryItem.querySelector('.gallery-item-title').textContent;
+                    const description = galleryItem.querySelector('.gallery-item-description').textContent;
+                    openLightbox(this, title, description);
+                }
+            });
+        });
+    });
+
+    // Close modals when clicking outside content
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('gallery-modal')) {
+            closeGallery();
+        }
+        if (e.target.classList.contains('lightbox-modal')) {
+            closeLightbox();
+        }
+    });
+
+    // Close modals with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeGallery();
+            closeLightbox();
+        }
+        
+        // Keyboard navigation for lightbox
+        if (document.getElementById('lightbox-modal').classList.contains('active') && !isAnimating) {
+            if (e.key === 'ArrowLeft') {
+                navigateLightbox(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateLightbox(1);
+            }
+        }
+    });
+
+    // Add animation to project cards on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 200);
+            }
+        });
+    }, observerOptions);
+
+    // Observe project cards
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+</script>
+
+<script>
+// Debug script - add this to test if the menu works
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    console.log('Debug: Menu toggle found:', menuToggle);
+    console.log('Debug: Nav links found:', navLinks);
+    
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            console.log('Debug: Menu toggle clicked!');
+            console.log('Debug: Current navLinks classes:', navLinks.className);
+            
+            // Toggle the active class
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            
+            console.log('Debug: After toggle - navLinks classes:', navLinks.className);
+            console.log('Debug: After toggle - menuToggle classes:', menuToggle.className);
+        });
+    } else {
+        console.error('Debug: Could not find menu elements!');
+    }
+});
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
